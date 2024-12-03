@@ -1,0 +1,28 @@
+/*Define la función convierteArrayEnString con la siguiente cabecera:
+public static String convierteArrayEnString(int[] a)
+Esta función toma como parámetro un array que contiene números y devuelve una cadena de
+caracteres con esos números. Por ejemplo, si a = { }, convierteArrayEnString(a) devuelve “”; si a = { 8 },
+convierteArrayEnString(a) devuelve “8”; si a = { 6, 2, 5, 0, 1 }, convierteArrayEnString(a) devuelve
+“62501”.*/
+
+public class ejercicio4 {
+    public static String convierteArrayEnString(int[] a) {
+        StringBuilder resultado = new StringBuilder(); // StringBuilder para construir la cadena
+
+        for (int num : a) {
+            resultado.append(num);
+        }
+
+        return resultado.toString(); // Devuelve la cadena resultante
+    }
+
+    public static void main(String[] args) {
+        int[] array1 = {};
+        int[] array2 = {7};
+        int[] array3 = {2, 4, 9, 5, 3};
+
+        System.out.println("Resultado 1: \"" + convierteArrayEnString(array1) + "\"");
+        System.out.println("Resultado 2: \"" + convierteArrayEnString(array2) + "\"");
+        System.out.println("Resultado 3: \"" + convierteArrayEnString(array3) + "\"");
+    }
+}
