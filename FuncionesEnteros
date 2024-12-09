@@ -1,4 +1,5 @@
-/*Creamos una carperta con el nombre Funcionenteros y metemos este archivo que será la biblioteca de funciones*/
+/*Creamos una carperta con el nombre Funcionenteros, que será la biblioteca de funciones, y metemos
+este archivo el cual contiene las diversas funciones con enteros.*/
 
 package Funcionenteros;
 
